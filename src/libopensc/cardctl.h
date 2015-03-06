@@ -455,7 +455,7 @@ struct sc_cardctl_oberthur_genkey_info {
 	unsigned int    pubkey_len;
 
 	int     method;     /* SC_AC_XXX */
-	int     key_ref;    /* key reference */		
+	int     key_ref;    /* key reference */
 };
 
 struct sc_cardctl_oberthur_updatekey_info {
@@ -464,7 +464,7 @@ struct sc_cardctl_oberthur_updatekey_info {
 	unsigned char   *data;
 	unsigned int    data_len;
 
-	unsigned char   id[256];
+	unsigned char   id[255];
 	unsigned int    id_len;
 };
 
